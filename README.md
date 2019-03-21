@@ -25,7 +25,7 @@ irb(main):002:0> user_story = UserStory.new
 
 => #<UserStory:0x007f8326836ea8 @rspec="Red">
 
-irb(main):003:0> user_story.create_objects_messages
+irb(main):003:0> user_story.create_domain_model
 
 => true
 
@@ -53,7 +53,7 @@ irb(main):009:0> user_story.refactor_code
 
 => true
 
-irb(main):010:0> user_story.implement
+irb(main):010:0> user_story.commit
 
 => "Feature implemented!"
 
