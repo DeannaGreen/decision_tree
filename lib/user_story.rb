@@ -5,12 +5,12 @@ class UserStory
     @rspec = "Red"
   end
 
-  def create_objects_messages
-    @objects_messages = true
+  def create_domain_model
+    @domain_model = true
   end
 
   def feature_test
-    fail 'No objects & messages created' unless @objects_messages
+    fail 'No domain model created' unless @domain_model
     @feature_test = true
   end
 
@@ -36,8 +36,8 @@ class UserStory
     @refactor_code = true
   end
 
-  def implement
+  def commit
     fail 'Code has not been refactored' unless @refactor_code
-    'Feature implemented!'
+    'Feature committed!'
   end
 end
